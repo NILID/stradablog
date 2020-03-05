@@ -1,0 +1,23 @@
+%header
+  .container
+    %nav.navbar.navbar-expand-md.no-gutters(style="padding: 0")
+      .col-8.offset-2.col-sm-12.offset-sm-0.col-md-3.text-left.text-center.justify-content-center
+        = link_to root_path do
+          = image_tag 'logo_1.png', class: 'img-fluid'
+
+%header.bg-dark(style='border-top: 0')
+  .container
+    %nav.navbar.navbar-expand-md.no-gutters(style="padding: 0")
+      %button.navbar-toggler{ style: 'position: absolute; top: 35px;padding-left: 0; z-index: 10', aria: { controls: "navbarNav14", expanded: "false", label: "Toggle navigation"}, data: { target: ".navbar-collapse-3", toggle: "collapse" }, :type => "button"}
+        = fa_icon 'bars inverse navbar-toggler-icon'
+
+      .col-8.offset-2.col-sm-12.offset-sm-0.col-md-3.text-left.text-center.justify-content-center
+        = image_tag 'logo_2.png', class: 'img-fluid'
+      #navbarNav14.collapse.navbar-collapse.justify-content-center.col-md-7.navbar-collapse-3
+        %ul.navbar-nav.navbar-nav-strada.justify-content-center
+          = render partial: 'layouts/links_top'
+      .collapse.navbar-collapse.justify-content-end.col-md-2.navbar-collapse-3
+        %ul.navbar-nav
+          - %i[en ru].each_with_index do |locale, index|
+            %li{ class: "#{(I18n.locale == locale) ? 'active' : nil}" }
+              = link_to locale, url_for(locale: locale), class: 'nav-link', style: 'text-transform: uppercase'

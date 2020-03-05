@@ -1,0 +1,43 @@
+/* lg */
+@media (min-width: 1200px) {
+
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+ .navbar-nav-strada .nav-link{
+    font-size: 1rem !important;
+    font-weight: 600
+  }
+
+}
+
+@media (max-width: 992px) {
+}
+
+@media (min-width: 768px) {
+  .carousel .carousel-indicators > li {
+    transform: scale(0.7);
+    margin: 0 7px;
+  }
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+ .navbar-nav-strada .nav-link{
+    font-size: 0.7rem !important;
+    font-weight: 600
+  }
+}
+
+/* xs */
+@media (max-width: 767px) {
+  .carousel .carousel-indicators > li {
+    transform: scale(0.7);
+    margin: 0 5px;
+  }
+}
+
+/* XS Portrait */
+@media (max-width: 479px) {
+}

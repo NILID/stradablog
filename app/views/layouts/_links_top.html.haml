@@ -1,0 +1,15 @@
+- top |= false
+
+%li.nav-item.mr-md-1.text-uppercase{ class: params[:action] == 'team' ? 'active' : nil }
+  = link_to t('main.team'), team_path, class: 'nav-link'
+  - if top
+    %span.sr-only (current)
+
+%li.nav-item.mx-md-1.text-uppercase{ class: params[:action] == 'exhibition' ? 'active' : nil }
+  = link_to t('main.exhibition'), exhibition_path, class: 'nav-link'
+%li.nav-item.mx-md-1.text-uppercase{ class: params[:action] == 'top' ? 'active' : nil }
+  = link_to t('main.top_10'), top_10_path, class: 'nav-link'
+%li.nav-item.mx-md-1.text-uppercase{ class: params[:action] == 'interview' ? 'active' : nil }
+  = link_to t('main.interview'), interview_path, class: 'nav-link'
+%li.nav-item.ml-md-1.text-uppercase{ class: params[:action] == 'about' ? 'active' : nil }
+  = link_to t('main.about'), about_path, class: 'nav-link'

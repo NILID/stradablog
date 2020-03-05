@@ -1,0 +1,23 @@
+.bg-dark {background: #ba0000 !important}
+
+/* The colour of the indicators */
+
+.carousel .carousel-indicators {
+  bottom: -60px;
+}
+
+.carousel .carousel-indicators > li {
+  margin: 0 10px;
+  background: #dad9d9;
+  height: 10px !important;
+  border-radius: 100%;
+}
+
+.carousel .carousel-indicators .active {
+  background: #ba0000;
+}
+
+.navbar-nav-strada .nav-link{
+  font-size: 1.1rem !important;
+  font-weight: 600
+}

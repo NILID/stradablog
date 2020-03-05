@@ -1,0 +1,4 @@
+# About
+
+* Template for stradablog
+

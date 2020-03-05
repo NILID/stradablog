@@ -1,0 +1,15 @@
+- top |= false
+
+%li.nav-item
+  = link_to t('main.team'), team_path, class: 'nav-link'
+  - if top
+    %span.sr-only (current)
+
+%li.nav-item
+  = link_to t('main.exhibition'), exhibition_path, class: 'nav-link'
+%li.nav-item
+  = link_to t('main.top_10'), top_10_path, class: 'nav-link'
+%li.nav-item
+  = link_to t('main.interview'), interview_path, class: 'nav-link'
+%li.nav-item
+  = link_to t('main.about'), about_path, class: 'nav-link'
